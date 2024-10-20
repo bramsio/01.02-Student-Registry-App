@@ -1,12 +1,11 @@
 name: Build and test
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    #add workflow 
-  workflow_dispatch:
 
 jobs:
   build:
